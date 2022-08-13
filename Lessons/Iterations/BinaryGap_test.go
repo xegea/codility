@@ -12,8 +12,8 @@ var binaryGapTests = []binaryGapTest{
 	{529, 4},
 	{1041, 5},
 	{15, 0},
-	{74901729, 4},   // fail
-	{1376796946, 5}, // fail
+	{74901729, 4},  
+	{1376796946, 5}, 
 }
 
 func TestSolution(t *testing.T) {
