@@ -1,1 +1,1 @@
-# codility
+# Codility - Tests my coding skills in Go    
