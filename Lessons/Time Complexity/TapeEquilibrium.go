@@ -1,19 +1,18 @@
 // https://app.codility.com/demo/results/trainingJ22URD-VDB/ 69%
 package timecomplex
 
+import "math"
+
 func Solution__(A []int) int {
-	min := 100000
+	var min float64 = 100000
 
 	for i := 0; i < len(A)-1; i++ {
-		var left []int = A[0 : i+1]
-		var right []int = A[i+1:]
-
-		eq := abs(sum(left[:]...) - sum(right[:]...))
+		eq := math.Abs(float64(sum(A[:i+1]...) - sum(A[i+1:]...)))
 		if eq < min {
 			min = eq
 		}
 	}
-	return min
+	return int(min)
 }
 
 func sum(nums ...int) int {
@@ -22,11 +21,4 @@ func sum(nums ...int) int {
 		result += num
 	}
 	return result
-}
-
-func abs(x int) int {
-	if x < 0 {
-		return -x
-	}
-	return x
 }
