@@ -2,7 +2,7 @@
 // Converting array to map improves performance
 // Score 66%: 	https://app.codility.com/demo/results/demoQGKZA2-7ZE/
 // Score 100%: 	https://app.codility.com/demo/results/demo3U7KP4-MTK/
-package demo
+package countingelements
 
 func Solution(A []int) int {
 	m1 := make(map[int]int)
