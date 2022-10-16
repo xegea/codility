@@ -1,1 +1,1 @@
-# Codility exercises for personal Go coding skills 
+# Codility exercises to test personal Go coding skills 
